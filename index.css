@@ -1,0 +1,20 @@
+body {
+    background-color: blanchedalmond;
+}
+
+table, th, td, tr {
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+div {
+    width: 600px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: slategray;
+}

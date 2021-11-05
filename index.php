@@ -1,19 +1,17 @@
-<?php include_once 'fetch.php';?>
+<!-- Initialization -->
+<?php include_once 'include/fetch.php';?>
+<?php include_once 'include/header.php';?>
+<link rel="stylesheet" href="index.css">
 
-<!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body">
 
-<div>
+<div id="main">
     <!-- Form for adding new names into the database -->
     <!-- All form data is sent to the submit.php file, through POST -->
     <!-- GET will show data in URL, POST will hide them -->
-    <form action="submit.php" method="POST">
-        <input type="text" name="first" placeholder="First name">
+    <form action="include/submit.php" method="POST">
+        <input required type="text" name="first" placeholder="First name">
         <br>
-        <input type="text" name="last" placeholder="Last name">
+        <input required type="text" name="last" placeholder="Last name">
         <br>
         <button type="submit" name="submit">Submit name</button>
     </form>
@@ -39,5 +37,15 @@
         }
     ?>
     </table>
+
+
+    <!-- Sends data to a template script, which will generate a page
+    based on the input sent here. 
+    Uses GET, which will result in a different URL-->
+    <form action="template.php" method="GET">
+        <input type="text" name="index" placeholder="Input #ID from list">
+        <br>
+        <button type="submit" name="test">Dynamically generated page test</button>
+    </form>
+
 </div>
-</body>

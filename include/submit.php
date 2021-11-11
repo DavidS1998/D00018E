@@ -17,5 +17,5 @@ if(!empty($first) AND !empty($last))
 
 // The current page is submit.php. 
 // The user should return to the previous page after submitting.
-//header("Location: ./../index.php?ValidationTextInURLHere");
+header("Location: ./../index.php?ValidationTextInURLHere");
 ?>

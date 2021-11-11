@@ -1,5 +1,5 @@
 <header>
 <div id="header">
-    <p>Header</p>
+    <p>Group 07</p>
 </div>
 </header>

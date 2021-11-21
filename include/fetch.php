@@ -5,7 +5,11 @@
 $dbServername = "localhost";
 $dbUsername = "admin";
 $dbPassword = "admin";
-$dbName = "commerce"; // Switch to "commerce" for the real database schema
+$dbName = "commerce";
 
+// Saves the connection in a variable
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
-?>
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}

@@ -5,25 +5,39 @@
 
 
 <div id="main">
-    <!-- Form for adding new names into the database -->
-    <!-- All form data is sent to the submit.php file, through POST -->
-    <!-- GET will show data in URL, POST will hide them
-    <form action="include/submit.php" method="POST">
-        <input required type="text" name="first" placeholder="First name">
+    <!--Search box. Whatever is in the search box will be sent to "submit.php", 
+    where it will then redirect back here with the search terms appended as 
+    ?search in the URL-->
+    <form action="include/submit.php" method="GET">
+        <input type="text" name="productname" placeholder="Search">
         <br>
-        <input required type="text" name="last" placeholder="Last name">
-        <br>
-        <button type="submit" name="submit">Submit name</button>
-    </form> -->
+        <button type="submit" name="submit">Search</button>
+    </form>
 
     <!-- Test PHP code that gets all names from the database, 
     and creates an HTML table with them -->
     <?php 
-        // Get data from query
-        $sql = "SELECT * FROM products;";
+        // Gets search data from the URL, if there is any
+        $search = $_GET['search'];
+        
+        $sql = "";
+        // Check if there are any searched words
+        if (empty($search)) {
+            // If not, then return the entire index
+            $sql = "SELECT * 
+                    FROM products;";
+        } else {
+            // Otherwise, return data that contains the search terms in the product name
+            $sql = "SELECT * 
+                    FROM products 
+                    WHERE name 
+                    LIKE '%$search%';";
+        }
+        // Holds the resulting query results
         $result = mysqli_query($conn, $sql);
 
-        // Will iterate through every row
+        // Will iterate through every row and output HTML elements on the page
+        // Should be improved to look better and be easier to modify
         while ($row = mysqli_fetch_assoc($result))
         {
             ?>
@@ -33,15 +47,4 @@
             <?php
         }
     ?>
-
-
-    <!-- Sends data to a template script, which will generate a page
-    based on the input sent here. 
-    Uses GET, which will result in a different URL
-    <form action="template.php" method="GET">
-        <input type="text" name="index" placeholder="Input #ID from list">
-        <br>
-        <button type="submit" name="test">Dynamically generated page test</button>
-    </form>-->
-
 </div>

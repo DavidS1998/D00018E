@@ -20,6 +20,13 @@ $icon = "";
 if ($outofstock == 1) {
     echo "<p class='error'>Product is out of stock!</p>";
 }
+// Tell the user that they are not logged in when commenting
+if (isset($_GET["error"])) {
+    if ($_GET["error"] == "notloggedin") {
+        echo "<p class='error'>You need to log in to comment</p>";
+    }
+}
+
 
 // Find the product in the table
 $sql = "SELECT * 
@@ -58,7 +65,45 @@ echo "<p>Rating: " . $rating . "</p>";
         <button type="submit" name="buy">Purchase</button>
 </form>
 <br>
-<a href="index.php">Return</a>
+<form action="include/comment.php" method="POST">
+    <textarea name="comment" placeholder="Comment..."></textarea>
+    <?php echo '<input type="hidden" name="index" value="' . $index . '" />'; ?>
+    <?php echo '<input type="hidden" name="userID" value="' . $_SESSION["userID"] . '" />'; ?>
+    <br>
+    <button type="submit" name="submit">Post</button>
+</form>
 
+<form action="include/rate.php" method="POST">
+    <input type="range" min="1" max="10" value="5">
+    <?php echo '<input type="hidden" name="index" value="' . $index . '" />'; ?>
+    <br>
+    <button type="submit" name="submit">Rate</button>
+</form>
+  
+<?php
+    // Commment section
+    // Query to load all comments
+    $sql = "SELECT * 
+        FROM comments 
+        WHERE productID = '$index'
+        ORDER BY date;";
 
+    // Holds the resulting query results
+    $result = mysqli_query($conn, $sql);
+
+    // Will iterate through every row and output HTML elements on the page
+    // Should be improved to look better and be easier to modify
+    while ($row = mysqli_fetch_assoc($result))
+    {
+        echo "<div>" . "\n";
+        echo $row['date'] . "\n";
+        echo "<br>" . "\n";
+        echo "From user: " . $row['userID'] . "\n";
+        echo "<br>" . "\n";
+        echo $row['message'] . "\n";
+        echo "<br>" . "\n";
+        echo "</div>" . "\n";
+    }
+?>
+</div>
 </div>

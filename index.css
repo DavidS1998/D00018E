@@ -8,10 +8,28 @@
 }
 
 #main {
-    width: 600px;
+    width: 800px;
     height: 1000px;
     margin: 0 auto;
     background-color: slategray;
+}
+
+#main > div {
+    float: left;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+#main > div > a {
+    padding: 0px;
+    margin: auto;
+}
+
+img {
+    margin: auto;
+    display: block;
 }
 
 body {

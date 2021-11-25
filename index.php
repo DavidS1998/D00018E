@@ -41,9 +41,11 @@
         while ($row = mysqli_fetch_assoc($result))
         {
             ?>
+                <?php echo "<div>";?>
                 <?php echo "<a href='template.php?index=" . $row['id'] . "'>" . $row['name'] . "</a>\n";?>
-                <?php echo "<b>" . $row['price'] . "kr</b>\n";?>
                 <?php echo "<img src='icon/" . $row['icon'] . "'>\n";?>
+                <?php echo "<b>" . $row['price'] . "kr</b>\n";?>
+                <?php echo "</div>";?>
             <?php
         }
     ?>

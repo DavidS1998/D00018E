@@ -29,9 +29,10 @@ if (isset($_GET["error"])) {
 
 
 // Find the product in the table
-$sql = "SELECT * 
-        FROM products 
-        WHERE id = '$index';";
+// Will get ratings from the ratings table as an average with 1 decimal
+$sql = "SELECT products.*, round(avg(ratings.rating),1) AS average
+        FROM products LEFT JOIN ratings ON products.id = ratings.productID
+        WHERE products.id = '$index';";
 $result = mysqli_query($conn, $sql);
 
 // Checks if the query returned any data
@@ -41,7 +42,7 @@ if (mysqli_num_rows($result) > 0) {
         $name = $row['name'];
         $quantity = $row['quantity'];
         $price = $row['price'];
-        $rating = $row['rating'];
+        $rating = $row['average'];
         $icon = $row['icon'];
     } 
 } else {
@@ -74,8 +75,9 @@ echo "<p>Rating: " . $rating . "</p>";
 </form>
 
 <form action="include/rate.php" method="POST">
-    <input type="range" min="1" max="10" value="5">
+    <input name="rating" type="range" min="1" max="10" value="5">
     <?php echo '<input type="hidden" name="index" value="' . $index . '" />'; ?>
+    <?php echo '<input type="hidden" name="userID" value="' . $_SESSION["userID"] . '" />'; ?>
     <br>
     <button type="submit" name="submit">Rate</button>
 </form>
@@ -83,10 +85,11 @@ echo "<p>Rating: " . $rating . "</p>";
 <?php
     // Commment section
     // Query to load all comments
-    $sql = "SELECT * 
-        FROM comments 
-        WHERE productID = '$index'
-        ORDER BY date;";
+    // Newest comments are up top
+    $sql = "SELECT c.*, u.username , u.id
+        FROM comments c, users u 
+        WHERE c.productID = '$index' AND userID = id
+        ORDER BY c.date DESC;";
 
     // Holds the resulting query results
     $result = mysqli_query($conn, $sql);
@@ -98,9 +101,9 @@ echo "<p>Rating: " . $rating . "</p>";
         echo "<div>" . "\n";
         echo $row['date'] . "\n";
         echo "<br>" . "\n";
-        echo "From user: " . $row['userID'] . "\n";
+        echo "From: " . $row['username'] . "\n";
         echo "<br>" . "\n";
-        echo $row['message'] . "\n";
+        echo "<h3>" . $row['message'] . "</h3>\n";
         echo "<br>" . "\n";
         echo "</div>" . "\n";
     }

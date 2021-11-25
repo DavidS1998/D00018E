@@ -9,9 +9,9 @@
 
 #main {
     width: 800px;
-    height: 1000px;
     margin: 0 auto;
     background-color: slategray;
+    overflow: hidden;
 }
 
 #main > div {
@@ -39,6 +39,7 @@ body {
     font-family: sans-serif;
     font-size: 24px;
     padding-top: 80px;
+
 }
 
 table {

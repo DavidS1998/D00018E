@@ -65,6 +65,16 @@ echo "<p>Rating: " . $rating . "</p>";
         <?php echo '<input type="hidden" name="index" value="' . $index . '" />'; ?>
         <button type="submit" name="buy">Purchase</button>
 </form>
+<?php
+if (isset($_SESSION["userID"])) {
+    if ($_SESSION["admin"] == "1") {
+        echo "<form action='include/restock.php' method='POST'>\n";
+        echo "<input type='hidden' name='index' value=" . $index . " />\n";
+        echo "<button type='submit' name='buy'>Restock</button>\n";
+        echo "</form>";
+    }
+}
+?>
 <br>
 <form action="include/comment.php" method="POST">
     <textarea name="comment" placeholder="Comment..."></textarea>
@@ -98,7 +108,23 @@ echo "<p>Rating: " . $rating . "</p>";
     // Should be improved to look better and be easier to modify
     while ($row = mysqli_fetch_assoc($result))
     {
-        echo "<div>" . "\n";
+        // Spaces may not be sent over HTTP POST
+        $date = $row['date'];
+        $date = str_replace(" ","%20",$date);
+
+        echo "<div style='height: 300px;'>" . "\n";
+
+        // Admin delete button
+        if (isset($_SESSION["userID"])) {
+            if ($_SESSION["admin"] == "1") {
+                echo "<form action='include/deletecomment.php' method='POST'>\n";
+                echo "<input type='hidden' name='date' value=" . $date . " />\n";
+                echo "<input type='hidden' name='index' value=" . $index . " />\n";
+                echo "<button type='submit' name='submit'>Delete</button>\n";
+                echo "</form>";
+            }
+        }
+
         echo $row['date'] . "\n";
         echo "<br>" . "\n";
         echo "From: " . $row['username'] . "\n";

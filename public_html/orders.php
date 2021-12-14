@@ -14,10 +14,10 @@ $result = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_assoc($result))
 {
         // Print out all orders
-        echo "<div style='width: 100%; height: 80px;'>";
+        echo "<div class='ordertable' style='width: 100%; height: 80px;'>";
         echo "<p style='float: left;'>" . 
-                            $row['transactionID'] . ". " .
-                            $row['username'] . " BOUGHT " . 
+                            $row['transactionID'] . ". <b>" .
+                            $row['username'] . "</b> BOUGHT " . 
                             $row['name'] . 
             "</p>\n";
         echo "</div>";

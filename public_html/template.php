@@ -24,13 +24,14 @@ if ($outofstock == 1) {
 // Tell the user that they are not logged in when commenting
 if (isset($_GET["error"])) {
     if ($_GET["error"] == "notloggedin") {
-        echo "<p class='error'>You need to log in to comment</p>";
+        echo "<p class='error'>You need to log in to rate or comment</p>";
     // Concurrent purchase
     } else if ($_GET["error"] == "transactionfail") {
         echo "<p class='error'>Someone else bought that first!</p>";
     // Guest attempts to buy a product
     } else if ($_GET["error"] == "notloggedintobuy") {
         echo "<p class='error'>Please log in to buy first!</p>";
+    // Guest attempts to add product to cart
     } else if ($_GET["error"] == "notloggedincart") {
         echo "<p class='error'>Please log in to add to cart!!</p>";
     }

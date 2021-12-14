@@ -1,0 +1,46 @@
+
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+Extension host agent listening on 36035
+
+[11:46:39] Extension host agent started.
+[11:46:39] [127.0.0.1][ec76b867][ManagementConnection] New connection established.
+[11:46:39] [127.0.0.1][ba7a8d83][ExtensionHostConnection] New connection established.
+[11:46:40] [127.0.0.1][ba7a8d83][ExtensionHostConnection] <3035> Launched Extension Host Process.
+[11:46:58] Installing extension: bmewburn.vscode-intelephense-client
+[11:46:59] Downloaded extension: bmewburn.vscode-intelephense-client /home/sandav-7/.vscode-server/data/CachedExtensionVSIXs/bmewburn.vscode-intelephense-client-1.8.0
+[11:47:00] Extracted extension to /home/sandav-7/.vscode-server/extensions/.d1ae544a-7ae0-4d3b-b776-d69795804aab: bmewburn.vscode-intelephense-client
+[11:47:00] Renamed to /home/sandav-7/.vscode-server/extensions/bmewburn.vscode-intelephense-client-1.8.0
+[11:47:00] Extracting completed. bmewburn.vscode-intelephense-client
+[11:47:00] Extension installed successfully: bmewburn.vscode-intelephense-client
+[11:47:01] Installing extension: unthrottled.doki-theme
+[11:47:02] Downloaded extension: unthrottled.doki-theme /home/sandav-7/.vscode-server/data/CachedExtensionVSIXs/unthrottled.doki-theme-19.0.0
+[11:47:02] Extracted extension to /home/sandav-7/.vscode-server/extensions/.15ca3ea2-c008-4d35-99fd-81ee90a64229: unthrottled.doki-theme
+[11:47:02] Renamed to /home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0
+[11:47:02] Extracting completed. unthrottled.doki-theme
+[11:47:02] Extension installed successfully: unthrottled.doki-theme
+[11:51:10] [127.0.0.1][ec76b867][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+Error: disposed
+    at f.requestPromise (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:81:9500)
+    at Object.call (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:81:9337)
+    at Object.call (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:80:7516)
+    at Proxy.<anonymous> (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:80:8956)
+    at I.watch (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:85:69438)
+    at s.doWatch (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:88:12393)
+    at s.doWatch (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:88:78534)
+    at s.doRefreshRecursiveWatchers (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:88:12311)
+    at /home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:88:11797
+    at b.queue (/home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:77:11973)
+    at /home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:77:13464
+    at /home/sandav-7/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/out/vs/server/remoteExtensionHostAgent.js:77:12926
+[11:51:11] [127.0.0.1][ba7a8d83][ExtensionHostConnection] <3035> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[11:51:11] Last EH closed, waiting before shutting down
+Last EH closed, shutting down
+[11:56:11] Last EH closed, shutting down

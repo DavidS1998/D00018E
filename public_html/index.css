@@ -9,8 +9,9 @@
 
 #main {
     width: 800px;
+    padding: 50px;
     margin: 0 auto;
-    background-color: slategray;
+    background-color: #91acc7;
     overflow: hidden;
 }
 
@@ -71,4 +72,9 @@ p, a {
 
 #header > div > p {
     float: left;
+}
+
+.ordertable  {
+    height: 25px !important;
+    margin: 0;
 }

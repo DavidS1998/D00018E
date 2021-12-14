@@ -1,0 +1,29 @@
+
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+Extension host agent listening on 36091
+
+[11:51:23] Extension host agent started.
+[11:51:23] [127.0.0.1][e8918b83][ManagementConnection] New connection established.
+[11:51:23] [127.0.0.1][daa4ad00][ExtensionHostConnection] New connection established.
+[11:51:23] [127.0.0.1][daa4ad00][ExtensionHostConnection] <3643> Launched Extension Host Process.
+[11:59:05] [127.0.0.1][e8918b83][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[11:59:06] [127.0.0.1][daa4ad00][ExtensionHostConnection] <3643> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[11:59:06] Last EH closed, waiting before shutting down
+Got delay-shutdown request while in shutdown timeout, delaying
+[11:59:14] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[11:59:14] Cancelling previous shutdown timeout
+[11:59:14] [127.0.0.1][59e2b2b0][ManagementConnection] New connection established.
+[11:59:14] [127.0.0.1][ef5f59e2][ExtensionHostConnection] New connection established.
+[11:59:14] [127.0.0.1][ef5f59e2][ExtensionHostConnection] <5277> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "8": Replaying 2833 chars and 1 size events
+New EH opened, aborting shutdown
+[12:04:14] New EH opened, aborting shutdown

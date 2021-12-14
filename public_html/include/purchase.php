@@ -1,12 +1,14 @@
 <?php include_once 'fetch.php';
 
+// Start transaction
+mysqli_query($conn, "BEGIN");
+
 // Gets the product ID
 $index = $_POST['index'];
 $quantity = 0;
 $userID = $_POST['userID'];
 
-
-
+// Error handling
 if (isset($_POST['userID'])) {
     if (empty($_POST['userID'])) {
         // If not logged in, refuse the request
@@ -14,11 +16,6 @@ if (isset($_POST['userID'])) {
         exit();
     }
 }
-
-//////////////////////
-    // Transaction begin
-mysqli_query($conn, "BEGIN");
-
 
 // Find the product in the table
 $sql = "SELECT * 
@@ -28,7 +25,7 @@ $result = mysqli_query($conn, $sql);
 
 // Use to test transactions: Attempt to purchase 
 // something with 1 stock remaining from two tabs
-sleep(1);
+//sleep(1);
 
 // Checks if the query returned any data
 // Iterates through the row to extract data from the columns

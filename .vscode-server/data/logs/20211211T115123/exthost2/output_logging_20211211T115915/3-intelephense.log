@@ -1,0 +1,29 @@
+[Info  - 12:01:38 PM] Initialising intelephense 1.8.0
+[Info  - 12:01:38 PM] Initialised in 35 ms
+[Info  - 12:01:38 PM] Environment changed. Refreshing 1 in memory documents.
+[Info  - 12:01:38 PM] Searching file:///home/sandav-7/.vscode-server/extensions/bmewburn.vscode-intelephense-client-1.8.0/node_modules/intelephense/lib/stub for files to index.
+[Info  - 12:01:38 PM] Searching file:///home/sandav-7 for files to index.
+[Info  - 12:01:38 PM] Indexing started.
+[Info  - 12:01:40 PM] Indexing ended. 161 files indexed in 2s.
+[Info  - 12:01:40 PM] Writing state to /home/sandav-7/.vscode-server/data/User/workspaceStorage/1021e0e43d1ce32d5a3bb0e42a186cee/bmewburn.vscode-intelephense-client/315cfeba.
+[Info  - 12:01:41 PM] Wrote state in 0.2s.
+[Info  - 12:05:15 PM] Indexing started.
+[Info  - 12:05:15 PM] Indexing ended. 10 files indexed in 0s.
+[Info  - 12:53:55 PM] Indexing started.
+[Info  - 12:53:55 PM] Indexing ended. 4 files indexed in 0s.
+[Info  - 1:49:07 PM] Indexing started.
+[Info  - 1:49:07 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 4:57:18 PM] Indexing started.
+[Info  - 4:57:18 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 8:01:29 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/register-inc.php'
+[Warn  - 8:01:29 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/register-inc.php'
+[Warn  - 8:01:29 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/register-inc.php'
+[Warn  - 8:01:29 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/register-inc.php'
+[Info  - 9:09:34 PM] Indexing started.
+[Info  - 9:09:34 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 9:14:19 PM] Indexing started.
+[Info  - 9:14:19 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 9:32:59 PM] Indexing started.
+[Info  - 9:33:01 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 9:48:30 PM] Indexing started.
+[Info  - 9:48:30 PM] Indexing ended. 1 files indexed in 0s.

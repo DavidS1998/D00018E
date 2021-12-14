@@ -1,0 +1,145 @@
+[2021-12-11 11:51:24.518] [exthost] [info] Extension host with pid 3643 started
+[2021-12-11 11:51:24.660] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-11 11:51:24.671] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-11 11:51:24.692] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-11 11:51:24.768] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-11 11:51:24.806] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+[2021-12-11 11:51:24.870] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2021-12-11 11:51:24.874] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2021-12-11 11:51:24.884] [exthost] [info] Lock '/home/sandav-7/.vscode-server/data/User/workspaceStorage/1021e0e43d1ce32d5a3bb0e42a186cee/vscode.lock': Lock acquired.
+[2021-12-11 11:51:25.312] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2021-12-11 11:51:25.398] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2021-12-11 11:51:25.557] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-11 11:51:25.577] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-11 11:51:25.582] [exthost] [info] ExtensionService#_doActivateExtension unthrottled.doki-theme, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-11 11:51:25.588] [exthost] [info] Eager extensions activated
+[2021-12-11 11:51:25.591] [exthost] [error] Activating extension unthrottled.doki-theme failed due to an error:
+[2021-12-11 11:51:25.591] [exthost] [error] Error: ENOENT: no such file or directory, scandir '/mnt/c/Users'
+	at Object.readdirSync (fs.js:1021:3)
+	at resolveWorkbench (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/ENV.js:22:32)
+	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/ENV.js:27:30)
+	at Module._compile (internal/modules/cjs/loader.js:1063:30)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+	at Module.load (internal/modules/cjs/loader.js:928:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+	at Function.t._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:32222)
+	at Function.p._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:28887)
+	at Function.f._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:104:61699)
+	at Module.require (internal/modules/cjs/loader.js:952:19)
+	at Module.require (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/extensions/json-language-features/client/dist/node/jsonClientMain.js:1:77160)
+	at require (internal/modules/cjs/helpers.js:88:18)
+	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/StickerService.js:17:15)
+	at Module._compile (internal/modules/cjs/loader.js:1063:30)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+	at Module.load (internal/modules/cjs/loader.js:928:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+	at Function.t._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:32222)
+	at Function.p._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:28887)
+	at Function.f._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:104:61699)
+	at Module.require (internal/modules/cjs/loader.js:952:19)
+	at Module.require (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/extensions/json-language-features/client/dist/node/jsonClientMain.js:1:77160)
+	at require (internal/modules/cjs/helpers.js:88:18)
+	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/ThemeManager.js:37:26)
+	at Module._compile (internal/modules/cjs/loader.js:1063:30)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+	at Module.load (internal/modules/cjs/loader.js:928:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+	at Function.t._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:32222)
+	at Function.p._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:28887)
+	at Function.f._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:104:61699)
+	at Module.require (internal/modules/cjs/loader.js:952:19)
+	at Module.require (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/extensions/json-language-features/client/dist/node/jsonClientMain.js:1:77160)
+	at require (internal/modules/cjs/helpers.js:88:18)
+	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/extension.js:27:24)
+	at Module._compile (internal/modules/cjs/loader.js:1063:30)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+	at Module.load (internal/modules/cjs/loader.js:928:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+	at Function.t._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:32222)
+	at Function.p._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:28887)
+	at Function.f._load (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:104:61699)
+	at Module.require (internal/modules/cjs/loader.js:952:19)
+	at Module.require (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/extensions/json-language-features/client/dist/node/jsonClientMain.js:1:77160)
+	at require (internal/modules/cjs/helpers.js:88:18)
+	at Function.r [as __$__nodeRequire] (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/loader.js:5:101)
+	at v._loadCommonJSModule (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:30297)
+	at v._doActivateExtension (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:12958)
+	at v._activateExtension (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:11931)
+	at Object.actualActivateExtension (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:9305)
+	at E._activateExtension (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:95:7855)
+	at /home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:95:7537
+	at Array.map (<anonymous>)
+	at E._activateExtensions (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:95:7525)
+	at E.activateById (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:95:5123)
+	at v._activateById (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:10308)
+	at v._activateOneStartupFinished (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:15524)
+	at v._activateAllStartupFinished (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:15895)
+	at /home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:16381
+[2021-12-11 11:51:25.807] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3146
+[2021-12-11 11:51:26.829] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:51:28.348] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:51:33.504] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:51:38.668] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:51:45.211] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:51:50.345] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:51:55.477] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:52:00.609] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:52:05.747] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:52:10.884] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:52:42.686] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:52:47.820] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:52:53.003] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:52:58.131] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:53:03.252] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:53:08.764] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:54:00.011] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:54:30.519] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:54:31.821] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:54:42.411] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:54:47.548] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:54:52.678] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:54:57.849] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:08.338] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:13.469] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:18.614] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:23.736] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:28.861] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:33.986] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:39.122] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:44.245] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:49.378] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:54.529] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:55:59.715] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:04.849] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:09.970] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:15.108] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:20.248] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:25.374] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:30.524] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:35.651] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:40.783] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:45.916] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:51.047] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:56:56.182] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:57:01.313] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:57:06.446] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:57:11.579] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:57:16.723] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:57:35.653] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:57:37.036] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:58:01.361] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:58:06.513] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:58:11.678] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:58:16.798] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3147
+[2021-12-11 11:58:24.337] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:58:29.470] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:58:34.608] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:58:39.749] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:58:44.871] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:58:50.012] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:58:55.151] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:59:00.273] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3149
+[2021-12-11 11:59:05.410] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3148
+[2021-12-11 11:59:06.804] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-12-11 11:59:06.805] [exthost] [info] Lock '/home/sandav-7/.vscode-server/data/User/workspaceStorage/1021e0e43d1ce32d5a3bb0e42a186cee/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+[2021-12-11 11:59:06.823] [exthost] [info] Extension host with pid 3643 exiting with code 0

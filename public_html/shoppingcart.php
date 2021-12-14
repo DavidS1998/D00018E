@@ -6,6 +6,11 @@
 
 $user = $_SESSION["userID"];
 
+// Error handling
+if (isset($_GET["outofstock"])) {
+    echo "<p class='error'>The following products do not have enough stock to finalize the purchase.</p>";
+}
+
 // Get a list of all orders, as well as associated product and user names
 $sql = "SELECT c.*, u.username, u.id, p.id, p.name, p.quantity
         FROM cart c, users u, products p

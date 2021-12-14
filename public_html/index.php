@@ -1,25 +1,7 @@
-<!--
-WRITE QUERIES FOR TRANSACTIONS
-✔Purchase
-❌Restock
-❌Register
-❌Comment
-❌Removing comment
-❌Rate
-
-READ QUERIES MAY ALSO NEED TRANSACTIONS
-❌Login
-❌Search
-❌Load product
-❌Load index
--->
-
-
 <!-- Initialization -->
 <?php include_once 'include/fetch.php';?>
 <?php include_once 'include/header.php';?>
 <link rel="stylesheet" href="index.css">
-
 
 <div id="main">
     <!--Search box. Whatever is in the search box will be sent to "submit.php", 

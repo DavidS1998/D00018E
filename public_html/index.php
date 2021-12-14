@@ -16,6 +16,7 @@
     <!-- Test PHP code that gets all names from the database, 
     and creates an HTML table with them -->
     <?php 
+        mysqli_query($conn, "BEGIN");
         // Gets search data from the URL, if there is any
         $search = $_GET['search'];
         
@@ -35,17 +36,21 @@
         // Holds the resulting query results
         $result = mysqli_query($conn, $sql);
 
+        if ($result) {
+            mysqli_query($conn, "COMMIT");
+          } else {
+            mysqli_query($conn, "ROLLBACK");
+        }
+
         // Will iterate through every row and output HTML elements on the page
         // Should be improved to look better and be easier to modify
         while ($row = mysqli_fetch_assoc($result))
         {
-            ?>
-                <?php echo "<div>";?>
-                <?php echo "<a href='template.php?index=" . $row['id'] . "'>" . $row['name'] . "</a>\n";?>
-                <?php echo "<img src='icon/" . $row['icon'] . "'>\n";?>
-                <?php echo "<b>" . $row['price'] . "kr</b>\n";?>
-                <?php echo "</div>";?>
-            <?php
+            echo "<div>";
+            echo "<a href='template.php?index=" . $row['id'] . "'>" . $row['name'] . "</a>\n";
+            echo "<img src='icon/" . $row['icon'] . "'>\n";
+            echo "<b>" . $row['price'] . "kr</b>\n";
+            echo "</div>";
         }
     ?>
 </div>

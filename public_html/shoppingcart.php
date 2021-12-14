@@ -11,11 +11,19 @@ if (isset($_GET["outofstock"])) {
     echo "<p class='error'>The following products do not have enough stock to finalize the purchase.</p>";
 }
 
+mysqli_query($conn, "BEGIN");
+
 // Get a list of all orders, as well as associated product and user names
 $sql = "SELECT c.*, u.username, u.id, p.id, p.name, p.quantity
         FROM cart c, users u, products p
         WHERE c.userID = u.id AND c.productID = p.id AND c.userID = $user";
 $result = mysqli_query($conn, $sql);
+
+if ($result) {
+        mysqli_query($conn, "COMMIT");
+      } else {
+        mysqli_query($conn, "ROLLBACK");
+}
 
 while ($row = mysqli_fetch_assoc($result))
 {

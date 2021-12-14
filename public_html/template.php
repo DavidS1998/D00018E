@@ -37,6 +37,7 @@ if (isset($_GET["error"])) {
     }
 }
 
+mysqli_query($conn, "BEGIN");
 
 // Find the product in the table
 // Will get ratings from the ratings table as an average with 1 decimal
@@ -47,6 +48,7 @@ $result = mysqli_query($conn, $sql);
 
 // Checks if the query returned any data
 if (mysqli_num_rows($result) > 0) {
+    mysqli_query($conn, "COMMIT");
     // Iterates through the row to extract data from the columns
     while($row = mysqli_fetch_assoc($result)) {
         $name = $row['name'];
@@ -57,6 +59,7 @@ if (mysqli_num_rows($result) > 0) {
     } 
 } else {
     // Invalid query
+    mysqli_query($conn, "ROLLBACK");
     echo '<p><b>Invalid input</b></p>';
 }
 
@@ -112,6 +115,7 @@ if (isset($_SESSION["userID"])) {
     // Commment section
     // Query to load all comments
     // Newest comments are up top
+    mysqli_query($conn, "BEGIN");
     $sql = "SELECT c.*, u.username, u.id
         FROM comments c, users u 
         WHERE c.productID = '$index' AND userID = id
@@ -119,6 +123,12 @@ if (isset($_SESSION["userID"])) {
 
     // Holds the resulting query results
     $result = mysqli_query($conn, $sql);
+
+    if ($result) {
+        mysqli_query($conn, "COMMIT");
+    } else {
+        mysqli_query($conn, "ROLLBACK");
+    }
 
     // Will iterate through every row and output HTML elements on the page
     // Should be improved to look better and be easier to modify

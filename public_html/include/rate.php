@@ -12,12 +12,20 @@ if ($userID == null) {
 	return;
 }
 
+mysqli_query($conn, "BEGIN");
+
 // Adds a comment identified by the current time as key
 $sql = "INSERT INTO ratings (productID, userID, rating)
 	VALUES ('$index', '$userID', $rating)
 	ON DUPLICATE KEY UPDATE
 	rating = $rating;";
-mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql);
+
+if ($result) {
+	mysqli_query($conn, "COMMIT");
+  } else {
+	mysqli_query($conn, "ROLLBACK");
+}
 
 
 header("Location: ../template.php?index=$index&rated_product");

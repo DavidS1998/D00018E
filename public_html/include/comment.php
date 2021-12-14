@@ -11,11 +11,18 @@ if ($userID == null) {
     header("Location: ../template.php?index=$index&error=notloggedin");
 }
 
+mysqli_query($conn, "BEGIN");
+
 // Adds a comment identified by the current time as key
 $sql = "INSERT INTO comments (date, message, productID, userID)
         VALUES (now(), '$comment', $index, $userID);";
-mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql);
 
+if ($result) {
+    mysqli_query($conn, "COMMIT");
+  } else {
+    mysqli_query($conn, "ROLLBACK");
+}
 
 header("Location: ../template.php?index=$index&comment_posted");
 exit();

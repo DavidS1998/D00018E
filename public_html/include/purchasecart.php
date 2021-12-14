@@ -4,12 +4,18 @@ require_once 'fetch.php';
 // Gets the user
 $userID = $_POST['userID'];
 
-
+mysqli_query($conn, "BEGIN");
 // Gets cart and its contents
 $sql = "SELECT c.*, p.*
         FROM cart c, products p
         WHERE c.userID = '$userID' AND c.productID = p.id;";
 $result = mysqli_query($conn, $sql);
+
+if ($result) {
+    mysqli_query($conn, "COMMIT");
+  } else {
+    mysqli_query($conn, "ROLLBACK");
+}
 
 $outofstock = false;
 
@@ -33,7 +39,7 @@ while ($row = mysqli_fetch_assoc($result))
             $sql = "INSERT INTO orders (productID, userID)
             VALUES ($productID, $userID);";
             mysqli_query($conn, $sql);
-          }
+        }
           
         // Remove from cart
         $sql = "DELETE FROM cart

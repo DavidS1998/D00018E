@@ -38,6 +38,7 @@ if (isset($_POST["submit"])) {
 // Log in as user
 function loginUser($conn, $name, $pwd) {
     $result = false;
+    mysqli_query($conn, "BEGIN");
     $sql = "SELECT * 
             FROM users
             WHERE username = ? AND password = ?;";
@@ -60,6 +61,13 @@ function loginUser($conn, $name, $pwd) {
     if ($row = mysqli_fetch_assoc($resultData)) {
         return $row;
     }
+
+    if ($result) {
+        mysqli_query($conn, "COMMIT");
+        } else {
+        mysqli_query($conn, "ROLLBACK");
+    }
+
     return $result;
 
     // Close the call

@@ -2525,3 +2525,7 @@
 [2021-12-14 00:02:39.032] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3192
 [2021-12-14 00:02:45.493] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3192
 [2021-12-14 00:02:50.661] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3192
+[2021-12-14 00:03:14.692] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 3192
+[2021-12-14 01:01:08.277] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2021-12-14 01:01:08.314] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2021-12-14 01:01:08.709] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features

@@ -6,6 +6,7 @@ mysqli_query($conn, "BEGIN");
 // Gets the product ID
 $index = $_POST['index'];
 $quantity = 0;
+$price = 0;
 $userID = $_POST['userID'];
 
 // Error handling
@@ -31,6 +32,7 @@ $result = mysqli_query($conn, $sql);
 // Iterates through the row to extract data from the columns
 while($row = mysqli_fetch_assoc($result)) {
     $quantity = $row['quantity'];
+    $price = $row['price'];
 }
 
 // Query for changing data in database (reduce by one)
@@ -44,8 +46,8 @@ if(!empty($index) && $quantity > 0)
     $result = mysqli_query($conn, $sql);
 
     // Add to order log
-    $sql = "INSERT INTO orders (productID, userID)
-    VALUES ($index, $userID);";
+    $sql = "INSERT INTO orders (productID, userID, orderstart, price)
+    VALUES ($index, $userID, '1', $price);";
     $result = mysqli_query($conn, $sql);
 
     // Check if the query succeeded

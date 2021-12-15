@@ -11,7 +11,7 @@
         <p style="width: 200px">Group 07</p>
     </div>
     <div>
-        <p><a href="../index.php">Home</a></p>
+        <p><a href="../index.php">Index</a></p>
     </div>
     <div>
         <p><a href="../orders.php">Orders</a></p>

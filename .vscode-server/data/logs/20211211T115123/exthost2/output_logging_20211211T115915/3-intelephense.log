@@ -69,3 +69,11 @@
 [Warn  - 5:16:44 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/login-inc.php'
 [Warn  - 5:16:48 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/login-inc.php'
 [Warn  - 5:16:48 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/login-inc.php'
+[Info  - 1:59:09 PM] Indexing started.
+[Info  - 1:59:10 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 1:59:19 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/register-inc.php'
+[Warn  - 1:59:19 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/register-inc.php'
+[Warn  - 1:59:19 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/register-inc.php'
+[Warn  - 1:59:19 PM] Error: ENOENT: no such file or directory, open '/home/sandav-7/include/register-inc.php'
+[Info  - 2:02:44 PM] Indexing started.
+[Info  - 2:02:45 PM] Indexing ended. 2 files indexed in 0s.

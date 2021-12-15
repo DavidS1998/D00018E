@@ -18,12 +18,15 @@ if ($result) {
 }
 
 $outofstock = false;
+$firstItem = '1';
 
 while ($row = mysqli_fetch_assoc($result))
 {
     $productID = $row['productID'];
     $productsLeft = $row['quantity'];
     $requestedStock = $row['amount'];
+    $price = $row['price'];
+
 
     if ($productsLeft - $requestedStock >= 0) {
         // Can be purchased
@@ -36,8 +39,8 @@ while ($row = mysqli_fetch_assoc($result))
 
         // Add to order log x times
         for ($i = 0; $i < $requestedStock; $i++) {
-            $sql = "INSERT INTO orders (productID, userID)
-            VALUES ($productID, $userID);";
+            $sql = "INSERT INTO orders (productID, userID, orderstart, price)
+            VALUES ($productID, $userID, $firstItem, $price);";
             mysqli_query($conn, $sql);
         }
           
@@ -45,6 +48,8 @@ while ($row = mysqli_fetch_assoc($result))
         $sql = "DELETE FROM cart
         WHERE productID = '$productID' AND userID = '$userID';";
         mysqli_query($conn, $sql);
+
+        $firstItem = '0';
         
     } else {
         // Not enough

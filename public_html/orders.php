@@ -21,12 +21,19 @@ if ($result) {
 
 while ($row = mysqli_fetch_assoc($result))
 {
+        // New order sequences are separated by a space
+        if ($row['orderstart'] == 1) {
+                echo "<div class='ordertable' style='width: 100%; height: 80px; margin-top: 20px;'>";
+        } else {
+                echo "<div class='ordertable' style='width: 100%; height: 80px;'>";
+        }
+
         // Print out all orders
-        echo "<div class='ordertable' style='width: 100%; height: 80px;'>";
         echo "<p style='float: left;'>" . 
                             $row['transactionID'] . ". <b>" .
                             $row['username'] . "</b> BOUGHT " . 
-                            $row['name'] . 
+                            $row['name'] . " FOR " .
+                            $row['price'] . "kr" .
             "</p>\n";
         echo "</div>";
 }

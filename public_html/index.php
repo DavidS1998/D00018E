@@ -52,5 +52,20 @@
             echo "<b>" . $row['price'] . "kr</b>\n";
             echo "</div>";
         }
+
+        // Form for adding new products
+        if (isset($_SESSION["userID"])) {
+            if ($adminStatus == "Yes") {
+                echo "<div>";
+                echo "You are admin";
+                echo "<form action='./include/addproduct.php' method='post'>";
+
+                echo "<input type='text' name='productname' placeholder='Name...'>";
+                echo "<input type='text' name='price' placeholder='Price...'>";
+                echo "<button type='submit' name='submit'>Add</button>";
+                echo "</form>";
+                echo "</div>";
+            }
+        }
     ?>
 </div>

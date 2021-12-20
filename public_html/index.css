@@ -78,3 +78,10 @@ p, a {
     height: 25px !important;
     margin: 0;
 }
+
+.ordertable > p {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}

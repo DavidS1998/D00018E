@@ -2529,3 +2529,26 @@
 [2021-12-14 01:01:08.277] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
 [2021-12-14 01:01:08.314] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
 [2021-12-14 01:01:08.709] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2021-12-15 14:56:54.783] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-12-15 14:56:54.785] [exthost] [info] Lock '/home/sandav-7/.vscode-server/data/User/workspaceStorage/1021e0e43d1ce32d5a3bb0e42a186cee/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+[2021-12-15 14:56:54.853] [exthost] [error] TypeError: Cannot read private member from an object whose class did not declare it
+	at Oe (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:6867)
+	at Object.dispose (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:86:17718)
+	at f (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:14:4961)
+	at v._deactivate (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:11648)
+	at /home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:10061
+	at Array.map (<anonymous>)
+	at v.deactivateAll (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:100:10049)
+	at p.terminate (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:104:735)
+	at r (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:36400)
+	at /home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:34278
+	at u.fire (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at r.fire (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:74:18942)
+	at n._receiveMessage (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:74:23523)
+	at /home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:74:21057
+	at u.fire (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at w.acceptChunk (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:74:15770)
+	at /home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:74:14900
+	at u.fire (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at s._processReadQueue (/home/sandav-7/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/out/vs/server/remoteExtensionHostProcess.js:114:21295)
+[2021-12-15 14:56:54.882] [exthost] [info] Extension host with pid 5277 exiting with code 0

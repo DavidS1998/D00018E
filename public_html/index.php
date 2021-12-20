@@ -47,7 +47,7 @@
         while ($row = mysqli_fetch_assoc($result))
         {
             echo "<div>";
-            echo "<a href='template.php?index=" . $row['id'] . "'>" . $row['name'] . "</a>\n";
+            echo "<a href='template.php?index=" . $row['id'] . "'>" . htmlspecialchars($row['name']) . "</a>\n";
             echo "<img src='icon/" . $row['icon'] . "'>\n";
             echo "<b>" . $row['price'] . "kr</b>\n";
             echo "</div>";

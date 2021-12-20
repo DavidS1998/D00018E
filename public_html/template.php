@@ -65,7 +65,7 @@ if (mysqli_num_rows($result) > 0) {
 
 // Outputs HTML elements containing the data
 // Can be prettied up easily
-echo '<p><b>' . $name . '</b></p>';
+echo '<p><b>' . htmlspecialchars($name) . '</b></p>';
 echo '<br>';
 echo '<img src="icon/' . $icon  . '">';
 echo "<p>Stock remaining: " . $quantity . "</p>";
@@ -155,7 +155,7 @@ if (isset($_SESSION["userID"])) {
         echo "<br>" . "\n";
         echo "From: " . $row['username'] . "\n";
         echo "<br>" . "\n";
-        echo "<h3>" . $row['message'] . "</h3>\n";
+        echo "<h3>" . htmlspecialchars($row['message']) . "</h3>\n";
         echo "<br>" . "\n";
         echo "</div>" . "\n";
     }

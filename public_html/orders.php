@@ -31,10 +31,13 @@ while ($row = mysqli_fetch_assoc($result))
         // Print out all orders
         echo "<p style='float: left;'>" . 
                             $row['transactionID'] . ". <b>" .
-                            $row['username'] . "</b> BOUGHT " . 
-                            $row['name'] . " FOR " .
-                            $row['price'] . "kr" .
-            "</p>\n";
+                            $row['username'] . "</b>: " . 
+                            htmlspecialchars($row['name']) . " FOR " .
+                            $row['price'] . "kr: ";
+                            if ($row['ordersum'] != 0) {
+                                echo $row['ordersum'] . "KR TOTAL";
+                            }
+            echo "</p>\n";
         echo "</div>";
 }
 ?>

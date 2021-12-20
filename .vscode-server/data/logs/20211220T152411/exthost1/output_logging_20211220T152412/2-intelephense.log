@@ -1,0 +1,9 @@
+[Info  - 3:24:14 PM] Initialising intelephense 1.8.0
+[Info  - 3:24:14 PM] Initialised in 46 ms
+[Info  - 3:24:14 PM] Environment changed. Refreshing 1 in memory documents.
+[Info  - 3:24:14 PM] Searching file:///home/sandav-7/.vscode-server/extensions/bmewburn.vscode-intelephense-client-1.8.0/node_modules/intelephense/lib/stub for files to index.
+[Info  - 3:24:14 PM] Searching file:///home/sandav-7/public_html for files to index.
+[Info  - 3:24:14 PM] Indexing started.
+[Info  - 3:24:16 PM] Indexing ended. 166 files indexed in 1s.
+[Info  - 3:24:16 PM] Writing state to /home/sandav-7/.vscode-server/data/User/workspaceStorage/76696277cc2f0fac2ad7b39b3a552660/bmewburn.vscode-intelephense-client/2ce87112.
+[Info  - 3:24:16 PM] Wrote state in 0.3s.

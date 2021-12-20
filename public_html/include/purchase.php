@@ -46,8 +46,8 @@ if(!empty($index) && $quantity > 0)
     $result = mysqli_query($conn, $sql);
 
     // Add to order log
-    $sql = "INSERT INTO orders (productID, userID, orderstart, price)
-    VALUES ($index, $userID, '1', $price);";
+    $sql = "INSERT INTO orders (productID, userID, orderstart, price, ordersum)
+    VALUES ($index, $userID, '1', $price, $price);";
     $result = mysqli_query($conn, $sql);
 
     // Check if the query succeeded

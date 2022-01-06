@@ -7,9 +7,9 @@
 * as described in the license https://aka.ms/vscode-remote/license
 *
 
-Extension host agent listening on 42725
+Extension host agent listening on 46881
 
-[15:24:11] Extension host agent started.
-[15:24:11] [127.0.0.1][2950ddd6][ManagementConnection] New connection established.
-[15:24:11] [127.0.0.1][c6911a3c][ExtensionHostConnection] New connection established.
-[15:24:11] [127.0.0.1][c6911a3c][ExtensionHostConnection] <324112> Launched Extension Host Process.
+[01:39:37] Extension host agent started.
+[01:39:37] [127.0.0.1][9a07d4b1][ManagementConnection] New connection established.
+[01:39:37] [127.0.0.1][a4abdae4][ExtensionHostConnection] New connection established.
+[01:39:37] [127.0.0.1][a4abdae4][ExtensionHostConnection] <413033> Launched Extension Host Process.

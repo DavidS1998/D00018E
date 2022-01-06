@@ -1,0 +1,77 @@
+[2022-01-06 01:39:38.962] [exthost] [info] Extension host with pid 413033 started
+[2022-01-06 01:39:39.173] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-06 01:39:39.191] [exthost] [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-06 01:39:39.241] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-06 01:39:39.247] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-06 01:39:39.807] [exthost] [info] Lock '/home/sandav-7/.vscode-server/data/User/workspaceStorage/76696277cc2f0fac2ad7b39b3a552660/vscode.lock': Lock acquired.
+[2022-01-06 01:39:39.930] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-06 01:39:40.018] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-06 01:39:40.161] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-06 01:39:40.184] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-06 01:39:40.190] [exthost] [info] ExtensionService#_doActivateExtension unthrottled.doki-theme, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-06 01:39:40.196] [exthost] [info] Eager extensions activated
+[2022-01-06 01:39:40.199] [exthost] [error] Activating extension unthrottled.doki-theme failed due to an error:
+[2022-01-06 01:39:40.200] [exthost] [error] Error: ENOENT: no such file or directory, scandir '/mnt/c/Users'
+	at Object.readdirSync (fs.js:1021:3)
+	at resolveWorkbench (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/ENV.js:22:32)
+	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/ENV.js:27:30)
+	at Module._compile (internal/modules/cjs/loader.js:1063:30)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+	at Module.load (internal/modules/cjs/loader.js:928:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+	at Function.t._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:32222)
+	at Function.p._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:28887)
+	at Function.f._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:104:61699)
+	at Module.require (internal/modules/cjs/loader.js:952:19)
+	at Module.require (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/extensions/git/dist/main.js:2:516200)
+	at require (internal/modules/cjs/helpers.js:88:18)
+	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/StickerService.js:17:15)
+	at Module._compile (internal/modules/cjs/loader.js:1063:30)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+	at Module.load (internal/modules/cjs/loader.js:928:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+	at Function.t._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:32222)
+	at Function.p._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:28887)
+	at Function.f._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:104:61699)
+	at Module.require (internal/modules/cjs/loader.js:952:19)
+	at Module.require (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/extensions/git/dist/main.js:2:516200)
+	at require (internal/modules/cjs/helpers.js:88:18)
+	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/ThemeManager.js:37:26)
+	at Module._compile (internal/modules/cjs/loader.js:1063:30)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+	at Module.load (internal/modules/cjs/loader.js:928:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+	at Function.t._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:32222)
+	at Function.p._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:28887)
+	at Function.f._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:104:61699)
+	at Module.require (internal/modules/cjs/loader.js:952:19)
+	at Module.require (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/extensions/git/dist/main.js:2:516200)
+	at require (internal/modules/cjs/helpers.js:88:18)
+	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/extension.js:27:24)
+	at Module._compile (internal/modules/cjs/loader.js:1063:30)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+	at Module.load (internal/modules/cjs/loader.js:928:32)
+	at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+	at Function.t._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:32222)
+	at Function.p._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:28887)
+	at Function.f._load (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:104:61699)
+	at Module.require (internal/modules/cjs/loader.js:952:19)
+	at Module.require (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/extensions/git/dist/main.js:2:516200)
+	at require (internal/modules/cjs/helpers.js:88:18)
+	at Function.r [as __$__nodeRequire] (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/loader.js:5:101)
+	at v._loadCommonJSModule (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:30297)
+	at v._doActivateExtension (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:12958)
+	at v._activateExtension (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:11931)
+	at Object.actualActivateExtension (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:9305)
+	at E._activateExtension (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:95:7855)
+	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:95:7537
+	at Array.map (<anonymous>)
+	at E._activateExtensions (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:95:7525)
+	at E.activateById (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:95:5123)
+	at v._activateById (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:10308)
+	at v._activateOneStartupFinished (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:15524)
+	at v._activateAllStartupFinished (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:15895)
+	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:16381
+[2022-01-06 01:39:40.245] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-06 01:39:40.256] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-06 01:39:40.351] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'

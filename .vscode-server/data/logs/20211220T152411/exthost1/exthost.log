@@ -227,3 +227,27 @@
 [2021-12-20 16:21:54.044] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1245
 [2021-12-20 16:21:59.276] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1246
 [2021-12-20 16:23:21.467] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1246
+[2021-12-20 16:23:39.095] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 1246
+[2021-12-20 16:28:41.502] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-12-20 16:28:41.509] [exthost] [info] Lock '/home/sandav-7/.vscode-server/data/User/workspaceStorage/76696277cc2f0fac2ad7b39b3a552660/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+[2021-12-20 16:28:41.541] [exthost] [error] TypeError: Cannot read private member from an object whose class did not declare it
+	at Oe (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:6867)
+	at Object.dispose (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:86:17718)
+	at f (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:14:4961)
+	at v._deactivate (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:11648)
+	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:10061
+	at Array.map (<anonymous>)
+	at v.deactivateAll (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:10049)
+	at p.terminate (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:104:735)
+	at r (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:36400)
+	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:34278
+	at u.fire (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at r.fire (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:18942)
+	at n._receiveMessage (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:23523)
+	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:21057
+	at u.fire (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at w.acceptChunk (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:15770)
+	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:14900
+	at u.fire (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at s._processReadQueue (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:21295)
+[2021-12-20 16:28:41.560] [exthost] [info] Extension host with pid 324112 exiting with code 0

@@ -12,3 +12,7 @@
 [2021-12-20 15:24:11.323] [remoteagent] [info] [127.0.0.1][2950ddd6][ManagementConnection] New connection established.
 [2021-12-20 15:24:11.338] [remoteagent] [info] [127.0.0.1][c6911a3c][ExtensionHostConnection] New connection established.
 [2021-12-20 15:24:11.364] [remoteagent] [info] [127.0.0.1][c6911a3c][ExtensionHostConnection] <324112> Launched Extension Host Process.
+[2021-12-20 16:28:41.510] [remoteagent] [info] [127.0.0.1][2950ddd6][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-12-20 16:28:41.577] [remoteagent] [info] [127.0.0.1][c6911a3c][ExtensionHostConnection] <324112> Extension Host Process exited with code: 0, signal: null.
+[2021-12-20 16:28:41.577] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-12-20 16:33:41.581] [remoteagent] [info] Last EH closed, shutting down

@@ -84,13 +84,34 @@ echo "<p>Rating: " . $rating . "</p>";
         <?php echo '<input type="hidden" name="userID" value="' . $_SESSION["userID"] . '" />'; ?>
         <button type="submit" name="cart">Add to Cart</button>
 </form>
+<form action="include/rate.php" method="POST">
+    <input name="rating" type="range" min="1" max="10" value="5">
+    <?php echo '<input type="hidden" name="index" value="' . $index . '" />'; ?>
+    <?php echo '<input type="hidden" name="userID" value="' . $_SESSION["userID"] . '" />'; ?>
+    <br>
+    <button type="submit" name="submit">Rate</button>
+</form>
 <?php
 if (isset($_SESSION["userID"])) {
     if ($_SESSION["admin"] == "1") {
+        echo "Admin commands";
         echo "<form action='include/restock.php' method='POST'>\n";
         echo "<input type='hidden' name='index' value=" . $index . " />\n";
-        echo "<button type='submit' name='buy'>Restock</button>\n";
+        echo "<button type='submit' name='buy'>Restock +1</button>\n";
         echo "</form>";
+
+        echo "<form action='include/changeprice.php' method='POST'>\n";
+        echo "<input type='hidden' name='index' value=" . $index . " />\n";
+        echo "<input type='number' name='newprice' min='0'>";
+        echo "<button type='submit' name='buy'>Change price</button>\n";
+        echo "</form>";
+
+        /*
+        echo "<form action='include/remove.php' method='POST' onsubmit='return confirm(\"Are you certain you want to delete this page?\");'>\n";
+        echo "<input type='hidden' name='index' value=" . $index . " />\n";
+        echo "<button type='submit'name='buy'>[Remove product]</button>\n";
+        echo "</form>";
+        */
     }
 }
 ?>
@@ -103,13 +124,7 @@ if (isset($_SESSION["userID"])) {
     <button type="submit" name="submit">Post</button>
 </form>
 
-<form action="include/rate.php" method="POST">
-    <input name="rating" type="range" min="1" max="10" value="5">
-    <?php echo '<input type="hidden" name="index" value="' . $index . '" />'; ?>
-    <?php echo '<input type="hidden" name="userID" value="' . $_SESSION["userID"] . '" />'; ?>
-    <br>
-    <button type="submit" name="submit">Rate</button>
-</form>
+
   
 <?php
     // Commment section

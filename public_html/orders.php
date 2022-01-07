@@ -30,13 +30,30 @@ while ($row = mysqli_fetch_assoc($result))
 
         // Print out all orders
         echo "<p style='float: left;'>" . 
-                            $row['transactionID'] . ". <b>" .
-                            $row['username'] . "</b>: " . 
-                            htmlspecialchars($row['name']) . " FOR " .
-                            $row['price'] . "kr: ";
-                            if ($row['ordersum'] != 0) {
-                                echo $row['ordersum'] . "KR TOTAL";
-                            }
+                $row['transactionID'] . ". <b>" .
+                $row['username'] . "</b>: " . 
+                htmlspecialchars($row['name']) . " FOR " .
+                $row['price'] . "kr: ";
+                if ($row['ordersum'] != 0) {
+                        echo $row['ordersum'] . "KR total. ";
+                if ($row['sent'] == 0) {
+                        echo " PENDING";
+                        $transactionID = $row['transactionID'];
+
+                        if (isset($_SESSION["userID"])) {
+                                if ($_SESSION["admin"] == "1") {
+                                        echo "<form action='include/send.php' style='margin-top: 20px' method='POST'>\n";
+                                        echo "<input type='hidden' name='transactionID' value=" . $transactionID . " />\n";
+                                        echo "<button type='submit' name='buy'>SEND</button>\n";
+                                        echo "</form>";
+                                }
+                        }
+                } else {
+                        echo " SENT";
+                }
+                
+                }
+                            
             echo "</p>\n";
         echo "</div>";
 }

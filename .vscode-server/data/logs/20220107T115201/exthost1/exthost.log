@@ -1,17 +1,17 @@
-[2022-01-06 01:39:38.962] [exthost] [info] Extension host with pid 413033 started
-[2022-01-06 01:39:39.173] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
-[2022-01-06 01:39:39.191] [exthost] [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client, startup: false, activationEvent: 'onLanguage:php'
-[2022-01-06 01:39:39.241] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
-[2022-01-06 01:39:39.247] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
-[2022-01-06 01:39:39.807] [exthost] [info] Lock '/home/sandav-7/.vscode-server/data/User/workspaceStorage/76696277cc2f0fac2ad7b39b3a552660/vscode.lock': Lock acquired.
-[2022-01-06 01:39:39.930] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
-[2022-01-06 01:39:40.018] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
-[2022-01-06 01:39:40.161] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
-[2022-01-06 01:39:40.184] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
-[2022-01-06 01:39:40.190] [exthost] [info] ExtensionService#_doActivateExtension unthrottled.doki-theme, startup: false, activationEvent: 'onStartupFinished'
-[2022-01-06 01:39:40.196] [exthost] [info] Eager extensions activated
-[2022-01-06 01:39:40.199] [exthost] [error] Activating extension unthrottled.doki-theme failed due to an error:
-[2022-01-06 01:39:40.200] [exthost] [error] Error: ENOENT: no such file or directory, scandir '/mnt/c/Users'
+[2022-01-07 11:52:03.122] [exthost] [info] Extension host with pid 431701 started
+[2022-01-07 11:52:03.207] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-07 11:52:03.230] [exthost] [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-07 11:52:03.282] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-07 11:52:03.295] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-07 11:52:03.483] [exthost] [info] Lock '/home/sandav-7/.vscode-server/data/User/workspaceStorage/76696277cc2f0fac2ad7b39b3a552660/vscode.lock': Lock acquired.
+[2022-01-07 11:52:03.815] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-07 11:52:03.905] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-07 11:52:04.059] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-07 11:52:04.098] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-07 11:52:04.340] [exthost] [info] ExtensionService#_doActivateExtension unthrottled.doki-theme, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-07 11:52:04.402] [exthost] [info] Eager extensions activated
+[2022-01-07 11:52:04.408] [exthost] [error] Activating extension unthrottled.doki-theme failed due to an error:
+[2022-01-07 11:52:04.408] [exthost] [error] Error: ENOENT: no such file or directory, scandir '/mnt/c/Users'
 	at Object.readdirSync (fs.js:1021:3)
 	at resolveWorkbench (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/ENV.js:22:32)
 	at Object.<anonymous> (/home/sandav-7/.vscode-server/extensions/unthrottled.doki-theme-19.0.0/out/ENV.js:27:30)
@@ -72,29 +72,7 @@
 	at v._activateOneStartupFinished (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:15524)
 	at v._activateAllStartupFinished (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:15895)
 	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:16381
-[2022-01-06 01:39:40.245] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
-[2022-01-06 01:39:40.256] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
-[2022-01-06 01:39:40.351] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
-[2022-01-06 03:13:34.143] [exthost] [info] extension host terminating: received terminate message from renderer
-[2022-01-06 03:13:34.154] [exthost] [info] Lock '/home/sandav-7/.vscode-server/data/User/workspaceStorage/76696277cc2f0fac2ad7b39b3a552660/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
-[2022-01-06 03:13:34.184] [exthost] [error] TypeError: Cannot read private member from an object whose class did not declare it
-	at Oe (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:6867)
-	at Object.dispose (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:86:17718)
-	at f (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:14:4961)
-	at v._deactivate (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:11648)
-	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:10061
-	at Array.map (<anonymous>)
-	at v.deactivateAll (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:100:10049)
-	at p.terminate (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:104:735)
-	at r (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:36400)
-	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:34278
-	at u.fire (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:66:1712)
-	at r.fire (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:18942)
-	at n._receiveMessage (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:23523)
-	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:21057
-	at u.fire (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:66:1712)
-	at w.acceptChunk (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:15770)
-	at /home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:74:14900
-	at u.fire (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:66:1712)
-	at s._processReadQueue (/home/sandav-7/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/out/vs/server/remoteExtensionHostProcess.js:114:21295)
-[2022-01-06 03:13:34.193] [exthost] [info] Extension host with pid 413033 exiting with code 0
+[2022-01-07 11:52:04.569] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-07 11:52:04.580] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-07 11:52:04.671] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-07 11:54:44.554] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'

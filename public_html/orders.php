@@ -37,7 +37,7 @@ while ($row = mysqli_fetch_assoc($result))
                 if ($row['ordersum'] != 0) {
                         echo $row['ordersum'] . "KR total. ";
                 if ($row['sent'] == 0) {
-                        echo " PENDING";
+                        echo " <span style=\"color:red;\">PENDING</span>";
                         $transactionID = $row['transactionID'];
 
                         if (isset($_SESSION["userID"])) {
@@ -49,7 +49,7 @@ while ($row = mysqli_fetch_assoc($result))
                                 }
                         }
                 } else {
-                        echo " SENT";
+                        echo " <span style=\"color:greenyellow;\">SENT</span>";
                 }
                 
                 }
